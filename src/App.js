@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
+import Home from "./components/home/Home"
 import Marvelchar from "./components/marvelchar/Marvelchar";
 import Marvelcomics from "./components/marvelcomics/Marvelcomics";
 import Marvelseries from "./components/marvelseries/Marvelseries";
@@ -22,6 +22,7 @@ function App() {
         <Header />
 
         <Routes>
+          <Route path="/" element={<Home/>} />
           <Route path="/charcters" element={<Marvelchar />} />
           <Route path="/comics" element={<Marvelcomics />} />
           <Route path="/series" element={<Marvelseries />} />
